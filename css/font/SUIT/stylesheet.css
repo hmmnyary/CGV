@@ -1,0 +1,44 @@
+@font-face {
+    font-family: '';
+    src: url('SUIT-Medium.eot');
+    src: url('SUIT-Medium.eot?#iefix') format('embedded-opentype'),
+        url('SUIT-Medium.woff2') format('woff2'),
+        url('SUIT-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: '';
+    src: url('SUIT-Light.eot');
+    src: url('SUIT-Light.eot?#iefix') format('embedded-opentype'),
+        url('SUIT-Light.woff2') format('woff2'),
+        url('SUIT-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: '';
+    src: url('SUIT-Regular.eot');
+    src: url('SUIT-Regular.eot?#iefix') format('embedded-opentype'),
+        url('SUIT-Regular.woff2') format('woff2'),
+        url('SUIT-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: '';
+    src: url('SUIT-Bold.eot');
+    src: url('SUIT-Bold.eot?#iefix') format('embedded-opentype'),
+        url('SUIT-Bold.woff2') format('woff2'),
+        url('SUIT-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
