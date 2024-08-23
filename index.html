@@ -271,7 +271,7 @@
                                     <strong>2024. 6. 12</strong>
                                 </div><!-- .slide_text end -->
                                 <picture>
-                                    <source srcset="img/main_visual_390.jpg" media="(max-width: 390px)">
+                                    <source srcset="img/main_visual_390.jpg" media="(max-width: 700px)">
                                     <source srcset="img/main_visual_960.jpg" media="(max-width: 1395px)">
                                     <img src="img/main_visual_1920.jpg" alt="인사이드 아웃2" />
                                 </picture>
@@ -285,7 +285,7 @@
                                     <strong>2024. 6. 21</strong>
                                 </div><!-- .slide_text end -->
                                 <picture>
-                                    <source srcset="img/main_visual_2_390.jpg" media="(max-width: 390px)">
+                                    <source srcset="img/main_visual_2_390.jpg" media="(max-width: 700px)">
                                     <source srcset="img/main_visual_2_960.jpg" media="(max-width: 1395px)">
                                     <img src="img/main_visual_2_1920.jpg" alt="하이재킹" />
                                 </picture>
@@ -668,17 +668,29 @@
                     <div class="swiper-wrapper">
                         <div class="swiper-slide">
                             <a href="#">
-                                <img src="img/banner_1920.jpg" alt="핸섬가이즈" />
+                                <picture>
+                                    <source srcset="img/banner_390.jpg" media="(max-width: 600px)">
+                                    <source srcset="img/banner_960.jpg" media="(max-width: 1395px)">
+                                    <img src="img/banner_1920.jpg" alt="핸섬가이즈" />
+                                </picture>
                             </a>
                         </div><!-- .swiper-slide end -->
                         <div class="swiper-slide">
                             <a href="#">
-                                <img src="img/banner_2_1920.jpg" alt="하이재킹" />
+                                <picture>
+                                    <source srcset="img/banner_2_390.jpg" media="(max-width: 600px)">
+                                    <source srcset="img/banner_2_960.jpg" media="(max-width: 1395px)">
+                                    <img src="img/banner_2_1920.jpg" alt="하이재킹" />
+                                </picture>
                             </a>
                         </div><!-- .swiper-slide end -->
                         <div class="swiper-slide">
                             <a href="#">
-                                <img src="img/banner_3_1920.jpg" alt="북극백화점의 안내원" />
+                                <picture>
+                                    <source srcset="img/banner_3_390.jpg" media="(max-width: 600px)">
+                                    <source srcset="img/banner_3_960.jpg" media="(max-width: 1395px)">
+                                    <img src="img/banner_3_1920.jpg" alt="북극백화점의 안내원" />
+                                </picture>
                             </a>
                         </div><!-- .swiper-slide end -->
                     </div><!-- .swiper-wrapper end -->
@@ -699,38 +711,38 @@
                         <div class="item">
                             <a href="#">
                                 <img src="img/cinema1.jpg" alt="SUITE CINEMA">
-                                <h6>SUITE CINEMA</h6>
                             </a>
+                            <h6>SUITE CINEMA</h6>
                         </div><!-- .item end -->
                         <div class="item">
                             <a href="#">
                                 <img src="img/cinema2.jpg" alt="CINEMA & LIVING ROOM">
-                                <h6>CINEMA<br />& LIVING ROOM</h6>
                             </a>
+                            <h6>CINEMA<br />& LIVING ROOM</h6>
                         </div><!-- .item end -->
                         <div class="item">
                             <a href="#">
                                 <img src="img/cinema3.jpg" alt="4DX">
-                                <h6>4DX</h6>
                             </a>
+                            <h6>4DX</h6>
                         </div><!-- .item end -->
                         <div class="item">
                             <a href="#">
                                 <img src="img/cinema4.jpg" alt="CINEMA de SHEF">
-                                <h6>CINEMA<br />de SHEF</h6>
                             </a>
+                            <h6>CINEMA<br />de SHEF</h6>
                         </div><!-- .item end -->
                         <div class="item">
                             <a href="#">
                                 <img src="img/cinema5.jpg" alt="IMAX">
-                                <h6>IMAX</h6>
                             </a>
+                            <h6>IMAX</h6>
                         </div><!-- .item end -->
                         <div class="item">
                             <a href="#">
                                 <img src="img/cinema6.jpg" alt="SCREENX">
-                                <h6>SCREENX</h6>
                             </a>
+                            <h6>SCREENX</h6>
                         </div><!-- .item end -->
                     </div><!-- .list end -->
                 </div><!-- .inner end -->
@@ -880,14 +892,13 @@
             }, */
             breakpoints: {
                 // when window width is >= 1396px
-                391: {
+                701: {
                     slidesPerView: 3,
                     spaceBetween: 0,
                     centeredSlides: false,
                 },
                 1396: {
                     slidesPerView: 5,
-                    spaceBetween: 0,
                     centeredSlides: false,
                     /* slidesOffsetBefore: 30,
                     slidesOffsetAfter: 30, */
@@ -897,7 +908,8 @@
 
         var swiper = new Swiper(".eventSwiper", {
             slidesPerView: 2,
-            spaceBetween: 30,
+            spaceBetween: 0,
+            //spaceBetween: 15,
             loop: true,
             navigation: {
                 nextEl: ".swiper-button-next",
@@ -909,8 +921,13 @@
             }, */
             breakpoints: {
                 // when window width is >= 961px
+                701: {
+                    slidesPerView: 2,
+                    //spaceBetween: 24,
+                },
                 961: {
                     slidesPerView: 3,
+                    //spaceBetween: 30,
                 },
             }
         });
