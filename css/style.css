@@ -1204,8 +1204,14 @@ main .inner .title > figure img {
     html {
         font-size: 37.5%;
     }
+    .header {
+        height: 80px;
+    }
     .header .util .hyundai {
         display: none;
+    }
+    .header .inner .logo img {
+        width: 80px;
     }
     .header .inner .logo p {
         display: none;
@@ -1215,7 +1221,7 @@ main .inner .title > figure img {
         font-size: 13px;
     }
     .poster .inner .title_wrap > a {
-        width: 15px;
+        width: 16px;
     }
     .posterSwiper .swiper-wrapper .swiper-slide {
         width: 210px;
@@ -1253,7 +1259,7 @@ main .inner .title > figure img {
         gap: 10px;
     }
     main .inner .title > figure img {
-        width: 15px;
+        width: 16px;
     }
     
     main .inner {
@@ -1310,7 +1316,7 @@ main .inner .title > figure img {
         gap: 5px;
     }
     .view_all img {
-        width: 15px;
+        width: 16px;
     }
     .notice {
         font-size: 14px;
@@ -1339,8 +1345,8 @@ main .inner .title > figure img {
     }
     
     .store .inner .store_title_wrap .store_btn {
-        width: 500px;
-        overflow: auto;
+        /* width: 500px;
+        overflow: auto; */
     }
     .store .inner .list {
         flex-wrap: wrap;
