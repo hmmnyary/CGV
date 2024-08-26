@@ -27,7 +27,6 @@
             window.addEventListener('wheel', (event) => {
                 let wheelScroll = event.deltaY;
                 if (wheelScroll > 0) {
-                    //alert('내려감');
                     header.addClass('on');
                 } else {
                     header.removeClass('on');
@@ -35,14 +34,10 @@
             });
 
             menuIcon.click(function () {
-                /* depth02.stop().slideToggle(); */
-                /* pcBg.stop().slideToggle(); */
                 mobileNav.toggleClass('on');
                 if (mobileNav.css('display') === 'block') {
                     bodyBg.fadeToggle();
                 }
-                /* bodyBg.fadeToggle();
-                mobileNav.toggleClass('on'); */
             });
 
             depth01.mouseenter(function () {
@@ -53,12 +48,6 @@
                 depth02.stop().slideDown();
                 $(this).prev().addClass('on');
             });
-            /* pcBg.mouseenter(function(){
-                depth02.stop().slideDown();
-            }) */
-            /* pcNav.mouseleave(function(){
-                depth02.slideUp();
-            }); */
             depth01.mouseleave(function () {
                 depth02.prev().removeClass('on');
             });
@@ -184,7 +173,7 @@
                     </div><!-- .form end -->
                     <a href="#"><img src="img/icon_login.svg" alt="로그인" /></a>
                     <a href="#"><img src="img/icon_CSR.svg" alt="상담하기" /></a>
-                    <a class="menu_btn" href="#"><img src="img/icon_hamburger_menu.svg" alt="메뉴 전체보기" /></a>
+                    <a class="menu_btn mobile" href="#"><img src="img/icon_hamburger_menu.svg" alt="메뉴 전체보기" /></a>
                 </div><!-- .util end -->
 
                 <nav class="mobile mobile_nav">
@@ -568,9 +557,11 @@
                                 </a>
                             </div><!-- .swiper-slide end -->
                         </div><!-- .swiper-wrapper end -->
+                    </div><!-- .eventSwiper end -->
+                    <div class="btn_wrap">
                         <div class="swiper-button-next"></div>
                         <div class="swiper-button-prev"></div>
-                    </div><!-- .eventSwiper end -->
+                    </div><!-- .btn_wrap end -->
 
                 </div><!-- .inner end -->
             </section><!-- .event end -->
@@ -869,10 +860,11 @@
                 nextEl: ".swiper-button-next",
                 prevEl: ".swiper-button-prev",
             },
-            /* autoplay: {
-                delay: 3000,
+            autoplay: {
+                delay: 4000,
                 disableOnInteraction: false,
-            }, */
+            },
+            effect: "fade"
         });
 
         var swiper = new Swiper(".posterSwiper", {
@@ -884,14 +876,7 @@
                 nextEl: ".swiper-button-next",
                 prevEl: ".swiper-button-prev",
             },
-            /* slidesOffsetBefore: 30, */
-            /* slidesOffsetAfter: 30, */
-            /* autoplay: {
-                delay: 3000,
-                disableOnInteraction: false,
-            }, */
             breakpoints: {
-                // when window width is >= 1396px
                 701: {
                     slidesPerView: 3,
                     spaceBetween: 0,
@@ -900,73 +885,47 @@
                 1396: {
                     slidesPerView: 5,
                     centeredSlides: false,
-                    /* slidesOffsetBefore: 30,
-                    slidesOffsetAfter: 30, */
                 },
             }
         });
 
         var swiper = new Swiper(".eventSwiper", {
             slidesPerView: 2,
-            spaceBetween: 0,
-            //spaceBetween: 15,
+            spaceBetween: 16,
             loop: true,
             navigation: {
                 nextEl: ".swiper-button-next",
                 prevEl: ".swiper-button-prev",
             },
-            /* autoplay: {
-                delay: 3000,
-                disableOnInteraction: false,
-            }, */
             breakpoints: {
-                // when window width is >= 961px
                 701: {
                     slidesPerView: 2,
-                    //spaceBetween: 24,
+                    spaceBetween: 24,
                 },
                 961: {
                     slidesPerView: 3,
-                    //spaceBetween: 30,
+                    spaceBetween: 30,
                 },
             }
         });
 
         var swiper = new Swiper(".bannerSwiper", {
             loop: true,
-            /* autoplay: {
+            autoplay: {
                 delay: 4000,
                 disableOnInteraction: false,
-            }, */
+            },
             effect: "fade",
         });
 
         var swiper = new Swiper(".noticeSwiper", {
             loop: true,
-            /* autoplay: {
+            autoplay: {
                 delay: 4000,
                 disableOnInteraction: false,
-            }, */
+            },
             effect: "fade",
         });
-
-        /* let menuBtn = document.getElementsByClassName('menu_btn')[0];
-        let mobileNav = document.getElementsByClassName('mobile_nav')[0];
-
-
-        let gnb = document.getElementsByClassName('gnb')[1];
-        let depth01 = gnb.getElementsByClassName('depth01')[0];
-        let depth02 = gnb.getElementsByClassName('depth02')[0];
-
-        menuBtn.addEventListener('click', () => {
-            mobileNav.classList.toggle('on');
-        })
-
-        depth01.addEventListener('click', () => {
-            depth02.classList.toggle('on');
-        })
-        gnb.addEventListener('click', () => {
-            /* alert(); */
 
     </script>
 </body>
