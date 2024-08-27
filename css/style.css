@@ -32,7 +32,6 @@ body {
     font-weight: normal;
     font-size: 16px;
     position: relative;
-    overflow-x: hidden;
 }
 .body_bg {
     position: absolute;
@@ -1339,6 +1338,9 @@ main .inner .title > figure img {
     .notice_left .customer_center .cc_btn a {
         padding: 8px 15px;
     }
+    .footer .footer_adress li {
+        line-height: 1.6;
+    }
 }/* 700 */
 
 @media screen and (max-width:450px) {
@@ -1346,10 +1348,12 @@ main .inner .title > figure img {
     .mainSwiper .swiper-btn .swiper-button-prev {
         background-size: 15px;
     }
-    
     .store .inner .store_title_wrap .store_btn {
-        /* width: 500px;
-        overflow: auto; */
+        overflow: auto;
+        white-space: nowrap;
+    }
+    .store .inner .store_title_wrap .store_btn::-webkit-scrollbar {
+        display: none;
     }
     .store .inner .list {
         flex-wrap: wrap;
