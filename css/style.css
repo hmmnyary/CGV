@@ -1228,6 +1228,12 @@ main .inner .title > figure img {
     .posterSwiper .swiper-wrapper .swiper-slide {
         width: 210px;
     }
+    .posterSwiper .swiper-wrapper .swiper-slide > a h2 {
+        font-size: 18px;
+    }
+    .posterSwiper .swiper-wrapper .swiper-slide > a .egg span {
+        font-size: 15px;
+    }
     .posterSwiper .swiper-button-next, 
     .posterSwiper .swiper-button-prev {
         top: 32%;
