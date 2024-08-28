@@ -626,13 +626,7 @@ main .inner .title > figure img {
     transition: 0.5s;
     font-size: 16px;
 }
-.store .inner .store_title_wrap .store_btn a:hover {
-    border: 1.5px solid #FB4357;
-    background-color: #ffffff;
-    color: #FB4357;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
-}
-.store .inner .store_title_wrap .store_btn a:first-of-type {
+.store .inner .store_title_wrap .store_btn a.on {
     border: 1.5px solid #FB4357;
     background-color: #ffffff;
     color: #FB4357;
@@ -643,7 +637,12 @@ main .inner .title > figure img {
     width: 74.72%;
     display: flex;
     justify-content: space-between;
+    display: none;
 }
+.store .inner .list.on {
+    display: flex;
+}
+
 .store .inner .list .item {
     width: 31.97%;
 }
@@ -744,9 +743,6 @@ main .inner .title > figure img {
     text-decoration: line-through;
     text-decoration-color: rgba(102, 102, 102, 0.5);
     font-size: 14px;
-}
-.store .inner .list.food {
-    display: none;
 }
 
 /****** banner ******/

@@ -69,6 +69,17 @@
                 }
             })
 
+            let storeBtn = $('.store_btn a');
+            let storeList = $('.store .list');
+
+            storeBtn.click(function () {
+                storeBtn.removeClass('on');
+                $(this).addClass('on');
+
+                storeList.removeClass('on');
+                storeList.eq($(this).index()).addClass('on');
+            });
+
         });//script end
     </script>
 
@@ -574,14 +585,14 @@
                             <figure class="event_more"><img src="img/icon_more_btn_000.svg" alt="스토어 전체보기" /></figure>
                         </a><!-- .title end -->
                         <div class="store_btn">
-                            <a href="#">전체</a>
-                            <a href="#">매점</a>
-                            <a href="#">영화관람권</a>
-                            <a href="#">기프트카드</a>
-                            <a href="#">굿즈</a>
+                            <a class="on" href="#" onclick="return false">전체</a>
+                            <a href="#" onclick="return false">매점</a>
+                            <a href="#" onclick="return false">영화관람권</a>
+                            <a href="#" onclick="return false">기프트카드</a>
+                            <a href="#" onclick="return false">굿즈</a>
                         </div><!-- .store_btn end -->
                     </div><!-- .store_title_wrap end -->
-                    <div class="list all">
+                    <div class="list all on">
                         <div class="item">
                             <div class="image_wrap">
                                 <img src="img/store_1-1.jpg" alt="나랑 너 패키지" />
@@ -651,9 +662,307 @@
                             </a><!-- .text.store_text end -->
                         </div><!-- .item end -->
                     </div><!-- .list.all end -->
+
                     <div class="list food">
-                        
+                        <div class="item">
+                            <div class="image_wrap">
+                                <img src="img/store_food1.jpg" alt="food1" />
+                                <div class="item_btn">
+                                    <a class="pay" href="#"></a>
+                                    <a class="gift" href="#"></a>
+                                    <a class="cart" href="#"></a>
+                                </div><!-- .item_btn -->
+                            </div>
+                            <a href="#" class="text store_text">
+                                <h5>나랑 너 패키지</h5>
+                                <span>일반 영화 관람권 2매+CGV콤보 1개</span>
+                                <div class="price">
+                                    <strong>35,000원</strong>
+                                </div>
+                            </a>
+                        </div><!-- .item end -->
+
+                        <div class="item">
+                            <div class="image_wrap">
+                                <img src="img/store_food2.jpg" alt="food2" />
+                                <div class="item_btn">
+                                    <a class="pay" href="#"></a>
+                                    <a class="gift" href="#"></a>
+                                    <a class="cart" href="#"></a>
+                                </div><!-- .item_btn -->
+                            </div>
+                            <a href="#" class="text store_text">
+                                <h5>CGV콤보</h5>
+                                <span>팝콘(L)1+탄산음료(M)2</span>
+                                <div class="price">
+                                    <strong>11,000원</strong>
+                                </div>
+                            </a>
+                        </div><!-- .item end -->
+
+                        <div class="item">
+                            <div class="image_wrap">
+                                <img src="img/store_food3.jpg" alt="food3" />
+                                <div class="item_btn">
+                                    <a class="pay" href="#"></a>
+                                    <a class="gift" href="#"></a>
+                                    <a class="cart" href="#"></a>
+                                </div><!-- .item_btn -->
+                            </div>
+                            <a href="#" class="text store_text">
+                                <h5>달콤팝콘(L)</h5>
+                                <span>달콤팝콘(L)</span>
+                                <div class="price">
+                                    <strong>7,000원</strong>
+                                </div>
+                            </a>
+                        </div><!-- .item end -->
+
+                        <div class="item">
+                            <div class="image_wrap">
+                                <img src="img/store_food4.jpg" alt="food4" />
+                                <div class="item_btn">
+                                    <a class="pay" href="#"></a>
+                                    <a class="gift" href="#"></a>
+                                    <a class="cart" href="#"></a>
+                                </div><!-- .item_btn -->
+                            </div>
+                            <a href="#" class="text store_text">
+                                <h5>에이드</h5>
+                                <span>오렌지에이드 or 자몽에이드</span>
+                                <div class="price">
+                                    <strong>5,500원</strong>
+                                </div>
+                            </a>
+                        </div><!-- .item end -->
+
                     </div><!-- .list.food end -->
+
+                    <div class="list voucher">
+                        <div class="item">
+                            <div class="image_wrap">
+                                <img src="img/store_voucher1.jpg" alt="voucher1" />
+                                <div class="item_btn">
+                                    <a class="pay" href="#"></a>
+                                    <a class="gift" href="#"></a>
+                                    <a class="cart" href="#"></a>
+                                </div><!-- .item_btn -->
+                            </div>
+                            <a href="#" class="text store_text">
+                                <h5>CGV 영화관람권</h5>
+                                <span>기프트콘</span>
+                                <div class="price">
+                                    <strong>13,000원</strong>
+                                </div>
+                            </a>
+                        </div><!-- .item end -->
+
+                        <div class="item">
+                            <div class="image_wrap">
+                                <img src="img/store_voucher2.jpg" alt="voucher2" />
+                                <div class="item_btn">
+                                    <a class="pay" href="#"></a>
+                                    <a class="gift" href="#"></a>
+                                    <a class="cart" href="#"></a>
+                                </div><!-- .item_btn -->
+                            </div>
+                            <a href="#" class="text store_text">
+                                <h5>IMAX 영화관람권</h5>
+                                <span>기프트콘</span>
+                                <div class="price">
+                                    <strong>18,000원</strong>
+                                </div>
+                            </a>
+                        </div><!-- .item end -->
+
+                        <div class="item">
+                            <div class="image_wrap">
+                                <img src="img/store_voucher3.jpg" alt="voucher3" />
+                                <div class="item_btn">
+                                    <a class="pay" href="#"></a>
+                                    <a class="gift" href="#"></a>
+                                    <a class="cart" href="#"></a>
+                                </div><!-- .item_btn -->
+                            </div>
+                            <a href="#" class="text store_text">
+                                <h5>4DX 영화관람권</h5>
+                                <span>기프트콘</span>
+                                <div class="price">
+                                    <strong>19,000원</strong>
+                                </div>
+                            </a>
+                        </div><!-- .item end -->
+
+                        <div class="item">
+                            <div class="image_wrap">
+                                <img src="img/store_voucher4.jpg" alt="voucher4" />
+                                <div class="item_btn">
+                                    <a class="pay" href="#"></a>
+                                    <a class="gift" href="#"></a>
+                                    <a class="cart" href="#"></a>
+                                </div><!-- .item_btn -->
+                            </div>
+                            <a href="#" class="text store_text">
+                                <h5>SCREENX 영화관람권</h5>
+                                <span>기프트콘</span>
+                                <div class="price">
+                                    <strong>16,000원</strong>
+                                </div>
+                            </a>
+                        </div><!-- .item end -->
+
+                    </div><!-- .list.voucher end -->
+
+                    <div class="list gift">
+                        <div class="item">
+                            <div class="image_wrap">
+                                <img src="img/store_giftcard1.jpg" alt="giftcard1" />
+                                <div class="item_btn">
+                                    <a class="pay" href="#"></a>
+                                    <a class="gift" href="#"></a>
+                                    <a class="cart" href="#"></a>
+                                </div><!-- .item_btn -->
+                            </div>
+                            <a href="#" class="text store_text">
+                                <h5>CGV바캉스</h5>
+                                <span>온라인전용</span>
+                                <div class="price">
+                                    <strong>금액충전형</strong>
+                                </div>
+                            </a>
+                        </div><!-- .item end -->
+
+                        <div class="item">
+                            <div class="image_wrap">
+                                <img src="img/store_giftcard2.jpg" alt="giftcard2" />
+                                <div class="item_btn">
+                                    <a class="pay" href="#"></a>
+                                    <a class="gift" href="#"></a>
+                                    <a class="cart" href="#"></a>
+                                </div><!-- .item_btn -->
+                            </div>
+                            <a href="#" class="text store_text">
+                                <h5>감사해바라기</h5>
+                                <span>온라인전용</span>
+                                <div class="price">
+                                    <strong>금액충전형</strong>
+                                </div>
+                            </a>
+                        </div><!-- .item end -->
+
+                        <div class="item">
+                            <div class="image_wrap">
+                                <img src="img/store_giftcard3.jpg" alt="giftcard3" />
+                                <div class="item_btn">
+                                    <a class="pay" href="#"></a>
+                                    <a class="gift" href="#"></a>
+                                    <a class="cart" href="#"></a>
+                                </div><!-- .item_btn -->
+                            </div>
+                            <a href="#" class="text store_text">
+                                <h5>PACONNIE A형</h5>
+                                <span>PACONNIE A형</span>
+                                <div class="price">
+                                    <strong>금액충전형</strong>
+                                </div>
+                            </a>
+                        </div><!-- .item end -->
+
+                        <div class="item">
+                            <div class="image_wrap">
+                                <img src="img/store_giftcard4.jpg" alt="giftcard4" />
+                                <div class="item_btn">
+                                    <a class="pay" href="#"></a>
+                                    <a class="gift" href="#"></a>
+                                    <a class="cart" href="#"></a>
+                                </div><!-- .item_btn -->
+                            </div>
+                            <a href="#" class="text store_text">
+                                <h5>PACONNIE B형</h5>
+                                <span>PACONNIE B형</span>
+                                <div class="price">
+                                    <strong>금액충전형</strong>
+                                </div>
+                            </a>
+                        </div><!-- .item end -->
+
+                    </div><!-- .list.gift end -->
+
+                    <div class="list goods">
+                        <div class="item">
+                            <div class="image_wrap">
+                                <img src="img/store_goods1.jpg" alt="goods1" />
+                                <div class="item_btn">
+                                    <a class="pay" href="#"></a>
+                                    <a class="gift" href="#"></a>
+                                    <a class="cart" href="#"></a>
+                                </div><!-- .item_btn -->
+                            </div>
+                            <a href="#" class="text store_text">
+                                <h5>퓨리오사</h5>
+                                <span>애착인형세트</span>
+                                <div class="price">
+                                    <strong>22,500원</strong>
+                                </div>
+                            </a>
+                        </div><!-- .item end -->
+
+                        <div class="item">
+                            <div class="image_wrap">
+                                <img src="img/store_goods2.jpg" alt="goods2" />
+                                <div class="item_btn">
+                                    <a class="pay" href="#"></a>
+                                    <a class="gift" href="#"></a>
+                                    <a class="cart" href="#"></a>
+                                </div><!-- .item_btn -->
+                            </div>
+                            <a href="#" class="text store_text">
+                                <h5>북극백화점의 안내원</h5>
+                                <span>디깅타임 회차 관람</span>
+                                <div class="price">
+                                    <strong>티켓 제시 시 증정</strong>
+                                </div>
+                            </a>
+                        </div><!-- .item end -->
+
+                        <div class="item">
+                            <div class="image_wrap">
+                                <img src="img/store_goods3.jpg" alt="goods3" />
+                                <div class="item_btn">
+                                    <a class="pay" href="#"></a>
+                                    <a class="gift" href="#"></a>
+                                    <a class="cart" href="#"></a>
+                                </div><!-- .item_btn -->
+                            </div>
+                            <a href="#" class="text store_text">
+                                <h5>신형만의 회상 피규어 4종</h5>
+                                <span>피규어 1종</span>
+                                <div class="price">
+                                    <strong>18,000원</strong>
+                                </div>
+                            </a>
+                        </div><!-- .item end -->
+
+                        <div class="item">
+                            <div class="image_wrap">
+                                <img src="img/store_goods4.jpg" alt="goods4" />
+                                <div class="item_btn">
+                                    <a class="pay" href="#"></a>
+                                    <a class="gift" href="#"></a>
+                                    <a class="cart" href="#"></a>
+                                </div><!-- .item_btn -->
+                            </div>
+                            <a href="#" class="text store_text">
+                                <h5>인사이드 아웃2</h5>
+                                <span>상세페이지안내</span>
+                                <div class="price">
+                                    <strong>상세페이지안내</strong>
+                                </div>
+                            </a>
+                        </div><!-- .item end -->
+
+                    </div><!-- .list.gift end -->
+
                 </div><!-- .inner end -->
             </section><!-- .store end -->
 
@@ -851,7 +1160,7 @@
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
-    <!-- Initialize Swiper -->
+    <!-- Swiperslide -->
     <script>
         var swiper = new Swiper(".mainSwiper", {
             loop: true,
